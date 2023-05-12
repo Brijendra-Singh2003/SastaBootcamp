@@ -12,13 +12,15 @@
 </head>
 <body>
     
+    <nav><button class="b" onclick="year('2022');this.classList.add('b');this.nextElementSibling.classList.remove('b')">2022</button><button onclick="year('2021');this.classList.add('b');this.previousElementSibling.classList.remove('b');">2021</button></nav>
     <div id="root"></div>
     
     <script>
+        function year(y) {
         const root = document.getElementById("root")
-        const p = fetch('./get2022.json')
+        root.innerHTML = "";
+        const p = fetch(`./get${y}.json`)
         p.then((response)=>{
-            console.log(response)
             return response.json()
         }).then((response)=>{
             console.log(response)
@@ -48,6 +50,8 @@
                 root.append(tile)
             }
         })
+        }
+        year("2022")
         function foo(t) {
             t.firstElementChild.classList.toggle("up")
         }
