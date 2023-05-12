@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-family: "karla";
+    color: aliceblue;
+    margin: 10px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 54);
+}
+#root{
+    height: 100vh;
+    overflow: scroll;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(48, 0, 93);
+}
+.container{
+    border: 3px solid rgb(162, 0, 255);
+    border-radius: 15px;
+    position: relative;
+    width: min(300px, 90vw);
+    height: min(400px, 120vw);
+    margin: 30px;
+    overflow: hidden;
+    background-color: rgb(0, 96, 199);
+}
+.card{
+    background-image: linear-gradient(white, rgb(85, 0, 182),rgb(0, 27, 201));
+    position: relative;
+    height: 800px;
+    width: 100%;
+    top: 0;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+.up{
+    top: -100%;
+}
+.imgc{
+    width: min(300px, 90vw);
+    height: min(400px, 120vw);
+    object-fit: cover;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.name{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-align: end;
+    font-size: 24px;
+    height:  min(100px, 30vw);
+    top:  min(300px, 90vw);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.297));
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+}
+.social > div{
+    height: 45px;
+    width: 45px;
+    border-radius: 20px;
+}
+.github{
+    background-image: url("./git.png");
+    background-size: cover;
+    scale: 0.9;
+}
+.insta{
+    background-image: url("./insta.png");
+    background-size: cover;
+}
+.linkedin{
+    background-image: url("./linkedin.png");
+    background-size: cover;
+}
