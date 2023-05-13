@@ -14,7 +14,9 @@ body{
     justify-content: center;
     background-color: rgb(0, 0, 54);
 }
-nav{
+nav{
+    position: absolute;
+    top: 0;
     width: min(300px, 90vw);
     height: 60px;
     display: flex;
@@ -32,7 +34,8 @@ button{
 .b{
     border-bottom: 5px solid greenyellow;
 }
-#root{
+#root{
+    margin-top: 60px;
     height: calc(100vh-60px);
     overflow: scroll;
     width: fit-content;
