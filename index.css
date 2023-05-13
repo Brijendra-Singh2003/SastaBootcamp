@@ -98,3 +98,11 @@ a{
     width: 45px;
     border-radius: 20px;
 }
+#insta{
+    padding: 7.5px;
+    height: 52px;
+    width: 52px;
+}
+span{
+    color: black;
+}
