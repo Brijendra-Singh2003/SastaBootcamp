@@ -57,7 +57,7 @@ button{
 .card{
     background-image: linear-gradient(white, rgb(85, 0, 182),rgb(0, 27, 201));
     position: relative;
-    height: 800px;
+    height: min(800px, 240vw);
     width: 100%;
     top: 0;
     transition-duration: 400ms;
@@ -85,7 +85,7 @@ img{
     font-size: 24px;
     height:  min(100px, 30vw);
     top:  min(300px, 90vw);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.297));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
 .social{
     display: flex;
@@ -94,9 +94,9 @@ img{
     height: 70px;
 }
 a{
+    margin-top: 10px;
     height: 45px;
     width: 45px;
-    border-radius: 20px;
 }
 #insta{
     padding: 7.5px;
