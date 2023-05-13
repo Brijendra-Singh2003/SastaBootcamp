@@ -22,7 +22,7 @@ nav{
     justify-content: space-around;
 }
 button{
-    height: calc(100vh - 60px);
+    height: 60px;
     width: min(300px, 90vw);
     color: aliceblue;
     font-size: 24px;
@@ -32,9 +32,8 @@ button{
 .b{
     border-bottom: 5px solid greenyellow;
 }
-#root{
-    margin-top: 60px;
-    height: 100vh;
+#root{
+    height: calc(100vh - 60px);
     overflow: scroll;
     width: fit-content;
     display: flex;
