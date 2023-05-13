@@ -32,8 +32,7 @@ button{
 .b{
     border-bottom: 5px solid greenyellow;
 }
-#root{
-    margin-top: 60px;
+#root{
     height: calc(100vh-60px);
     overflow: scroll;
     width: fit-content;
